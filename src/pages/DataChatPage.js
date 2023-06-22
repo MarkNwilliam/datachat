@@ -74,7 +74,7 @@ const DataChatPage = () => {
 
       
       // You should replace this string with your Blob SAS URL
-      
+      const sasUrl = ""
       const blobServiceClient = new BlobServiceClient(sasUrl);
       const containerClient = blobServiceClient.getContainerClient('mosicsv');
       const blockBlobClient = containerClient.getBlockBlobClient(file.name);
